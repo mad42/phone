@@ -13,12 +13,24 @@ defmodule Phone.Mixfile do
       start_permanent: Mix.env() == :prod,
       package: package(),
       deps: deps(),
-      docs: docs()
-    ] ++ coverage()
+      docs: docs(),
+      test_coverage: [tool: ExCoveralls]
+    ]
   end
 
   def application do
     [extra_applications: []]
+  end
+
+  def cli do
+    [
+      preferred_envs: [
+        coveralls: :test,
+        "coveralls.detail": :test,
+        "coveralls.post": :test,
+        "coveralls.html": :test
+      ]
+    ]
   end
 
   defp package do
@@ -52,18 +64,6 @@ defmodule Phone.Mixfile do
       formatters: ["html"],
       api_reference: false,
       skip_undefined_reference_warnings_on: ["CHANGELOG.md"]
-    ]
-  end
-
-  defp coverage do
-    [
-      test_coverage: [tool: ExCoveralls],
-      preferred_cli_env: [
-        coveralls: :test,
-        "coveralls.detail": :test,
-        "coveralls.post": :test,
-        "coveralls.html": :test
-      ]
     ]
   end
 end
