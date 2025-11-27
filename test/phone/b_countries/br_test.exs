@@ -33,14 +33,14 @@ defmodule Phone.BRTest do
     Phone.BR.TO
   ]
 
-  Enum.map(main_module.codes, fn code ->
+  Enum.map(main_module.codes(), fn code ->
     test "#{inspect(main_module)} parses area code #{code}" do
       assert Phone.valid?(unquote("#{code}55555555"))
       assert {:ok, parsed} = Phone.parse(unquote("#{code}55555555"))
 
-      assert parsed.country == unquote(main_module).country
-      assert parsed.a2 == unquote(main_module).a2
-      assert parsed.a3 == unquote(main_module).a3
+      assert parsed.country == unquote(main_module).country()
+      assert parsed.a2 == unquote(main_module).a2()
+      assert parsed.a3 == unquote(main_module).a3()
     end
 
     test "#{inspect(main_module)} cant parse wrong number with code #{code}" do
@@ -57,17 +57,17 @@ defmodule Phone.BRTest do
   end)
 
   Enum.map(all_modules, fn module ->
-    Enum.map(module.codes, fn code ->
+    Enum.map(module.codes(), fn code ->
       test "#{inspect(module)} parses area code #{code}" do
         assert Phone.valid?(unquote("#{code}55555555"))
         assert {:ok, parsed} = Phone.parse(unquote("#{code}55555555"))
 
-        assert parsed.country == unquote(main_module).country
-        assert parsed.a2 == unquote(main_module).a2
-        assert parsed.a3 == unquote(main_module).a3
-        assert parsed.area_type == unquote(module).area_type
-        assert parsed.area_name == unquote(module).area_name
-        assert parsed.area_abbreviation == unquote(module).area_abbreviation
+        assert parsed.country == unquote(main_module).country()
+        assert parsed.a2 == unquote(main_module).a2()
+        assert parsed.a3 == unquote(main_module).a3()
+        assert parsed.area_type == unquote(module).area_type()
+        assert parsed.area_name == unquote(module).area_name()
+        assert parsed.area_abbreviation == unquote(module).area_abbreviation()
       end
 
       test "#{inspect(module)} cant parse wrong number with code #{code}" do

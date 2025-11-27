@@ -208,7 +208,7 @@ defmodule Phone.CountriesTest do
     Phone.NANP
   ]
 
-  Enum.map(main_module.codes, fn code ->
+  Enum.map(main_module.codes(), fn code ->
     test "#{inspect(main_module)} cant parse wrong number with code #{code}" do
       refute Phone.valid?(unquote("#{code}"))
       assert {:error, _} = Phone.parse(unquote("#{code}"))
@@ -223,7 +223,7 @@ defmodule Phone.CountriesTest do
   end)
 
   Enum.map(all_modules, fn module ->
-    Enum.map(module.codes, fn code ->
+    Enum.map(module.codes(), fn code ->
       test "#{inspect(module)} cant parse wrong number with code #{code}" do
         refute Phone.valid?(unquote("#{code}"))
         assert {:error, _} = Phone.parse(unquote("#{code}"))

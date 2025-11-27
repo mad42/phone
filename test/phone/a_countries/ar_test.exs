@@ -3,14 +3,14 @@ defmodule Phone.ARTest do
 
   main_module = Phone.AR
 
-  Enum.map(main_module.codes, fn code ->
+  Enum.map(main_module.codes(), fn code ->
     test "#{inspect(main_module)} parses area code #{code}" do
       assert Phone.valid?(unquote("#{code}5555555555"))
       assert {:ok, parsed} = Phone.parse(unquote("#{code}5555555555"))
 
-      assert parsed.country == unquote(main_module).country
-      assert parsed.a2 == unquote(main_module).a2
-      assert parsed.a3 == unquote(main_module).a3
+      assert parsed.country == unquote(main_module).country()
+      assert parsed.a2 == unquote(main_module).a2()
+      assert parsed.a3 == unquote(main_module).a3()
     end
 
     test "#{inspect(main_module)} cant parse wrong number with code #{code}" do

@@ -32,7 +32,7 @@ defmodule Phone.NANPTest do
     Phone.NANP.TollFree
   ]
 
-  Enum.map(main_module.codes, fn code ->
+  Enum.map(main_module.codes(), fn code ->
     test "#{inspect(main_module)} cant parse wrong number with code #{code}" do
       refute Phone.valid?(unquote("#{code}555123"))
       assert {:error, _} = Phone.parse(unquote("#{code}555123"))
@@ -47,14 +47,14 @@ defmodule Phone.NANPTest do
   end)
 
   Enum.map(all_modules, fn module ->
-    Enum.map(module.codes, fn code ->
+    Enum.map(module.codes(), fn code ->
       test "#{inspect(module)} parses area code #{code}" do
         assert Phone.valid?(unquote("#{code}5551234"))
         assert {:ok, parsed} = Phone.parse(unquote("#{code}5551234"))
 
-        assert parsed.country == unquote(module).country
-        assert parsed.a2 == unquote(module).a2
-        assert parsed.a3 == unquote(module).a3
+        assert parsed.country == unquote(module).country()
+        assert parsed.a2 == unquote(module).a2()
+        assert parsed.a3 == unquote(module).a3()
       end
 
       test "#{inspect(module)} cant parse wrong number with code #{code}" do
