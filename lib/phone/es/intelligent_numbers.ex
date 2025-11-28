@@ -7,6 +7,7 @@ defmodule Phone.ES.IntelligentNumbers do
   def country, do: "Spain intelligent-number"
   def a2, do: "ES"
   def a3, do: "ESP"
+  def emoji, do: "🇪🇸"
 
   matcher(:regex, [
     "34900",

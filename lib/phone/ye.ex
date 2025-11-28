@@ -7,6 +7,7 @@ defmodule Phone.YE do
   def country, do: "Yemen"
   def a2, do: "YE"
   def a3, do: "YEM"
+  def emoji, do: "🇾🇪"
 
   matcher(:regex, ["967"])
 end

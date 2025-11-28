@@ -8,8 +8,9 @@ defmodule Helper.Country do
       def country, do: ""
       def a2, do: ""
       def a3, do: ""
+      def emoji, do: ""
 
-      defoverridable regex: 0, country: 0, a2: 0, a3: 0
+      defoverridable regex: 0, country: 0, a2: 0, a3: 0, emoji: 0
 
       def builder(number) do
         [[_, code, area, number]] = Regex.scan(regex(), number)
@@ -18,6 +19,7 @@ defmodule Helper.Country do
           country: country(),
           a2: a2(),
           a3: a3(),
+          emoji: emoji(),
           international_code: code,
           area_code: area,
           number: number

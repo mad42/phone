@@ -7,6 +7,7 @@ defmodule Phone.CV do
   def country, do: "Cape Verde"
   def a2, do: "CV"
   def a3, do: "CPV"
+  def emoji, do: "🇨🇻"
 
   matcher(:regex, ["238"])
 end

@@ -7,6 +7,7 @@ defmodule Phone.IN do
   def country, do: "India"
   def a2, do: "IN"
   def a3, do: "IND"
+  def emoji, do: "🇮🇳"
 
   matcher(:regex, ["91"])
 end

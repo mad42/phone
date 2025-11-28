@@ -7,6 +7,7 @@ defmodule Phone.NANP.AI do
   def country, do: "Anguilla"
   def a2, do: "AI"
   def a3, do: "AIA"
+  def emoji, do: "🇦🇮"
 
   matcher(:regex, ["1264"])
 end

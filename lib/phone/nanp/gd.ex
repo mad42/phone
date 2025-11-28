@@ -7,6 +7,7 @@ defmodule Phone.NANP.GD do
   def country, do: "Grenada"
   def a2, do: "GD"
   def a3, do: "GRD"
+  def emoji, do: "🇬🇩"
 
   matcher(:regex, ["1473"])
 end

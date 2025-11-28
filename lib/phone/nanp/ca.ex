@@ -6,6 +6,7 @@ defmodule Phone.NANP.CA do
   def country, do: "Canada"
   def a2, do: "CA"
   def a3, do: "CAN"
+  def emoji, do: "🇨🇦"
 
   matcher(:modules, [
     Phone.NANP.CA.AB,

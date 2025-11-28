@@ -7,6 +7,7 @@ defmodule Phone.SR do
   def country, do: "Suriname"
   def a2, do: "SR"
   def a3, do: "SUR"
+  def emoji, do: "🇸🇷"
 
   matcher(:regex, ["597"])
 end

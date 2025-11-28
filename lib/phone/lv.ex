@@ -7,6 +7,7 @@ defmodule Phone.LV do
   def country, do: "Latvia"
   def a2, do: "LV"
   def a3, do: "LVA"
+  def emoji, do: "🇱🇻"
 
   matcher(:regex, ["371"])
 end

@@ -7,6 +7,7 @@ defmodule Phone.NANP.VG do
   def country, do: "British Virgin Islands"
   def a2, do: "VG"
   def a3, do: "VGB"
+  def emoji, do: "🇻🇬"
 
   matcher(:regex, ["1284"])
 end

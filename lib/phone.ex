@@ -6,7 +6,7 @@ defmodule Phone do
 
   Very simple to use:
       iex> Phone.parse("555132345678")
-      {:ok, %{a2: "BR", a3: "BRA", country: "Brazil", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}}
+      {:ok, %{a2: "BR", a3: "BRA", country: "Brazil", emoji: "🇧🇷", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}}
   """
 
   import Helper.Parser
@@ -16,16 +16,16 @@ defmodule Phone do
 
   ```
     iex> Phone.parse("555132345678")
-    {:ok, %{a2: "BR", a3: "BRA", country: "Brazil", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}}
+    {:ok, %{a2: "BR", a3: "BRA", country: "Brazil", emoji: "🇧🇷", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}}
 
     iex> Phone.parse("+55(51)3234-5678")
-    {:ok, %{a2: "BR", a3: "BRA", country: "Brazil", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}}
+    {:ok, %{a2: "BR", a3: "BRA", country: "Brazil", emoji: "🇧🇷", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}}
 
     iex> Phone.parse("55 51 3234-5678")
-    {:ok, %{a2: "BR", a3: "BRA", country: "Brazil", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}}
+    {:ok, %{a2: "BR", a3: "BRA", country: "Brazil", emoji: "🇧🇷", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}}
 
     iex> Phone.parse(555132345678)
-    {:ok, %{a2: "BR", a3: "BRA", country: "Brazil", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}}
+    {:ok, %{a2: "BR", a3: "BRA", country: "Brazil", emoji: "🇧🇷", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}}
 
   ```
   """
@@ -74,16 +74,16 @@ defmodule Phone do
 
   ```
   iex> Phone.parse!("555132345678")
-  %{a2: "BR", a3: "BRA", country: "Brazil", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}
+  %{a2: "BR", a3: "BRA", country: "Brazil", emoji: "🇧🇷", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}
 
   iex> Phone.parse!("+55(51)3234-5678")
-  %{a2: "BR", a3: "BRA", country: "Brazil", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}
+  %{a2: "BR", a3: "BRA", country: "Brazil", emoji: "🇧🇷", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}
 
   iex> Phone.parse!("55 51 3234-5678")
-  %{a2: "BR", a3: "BRA", country: "Brazil", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}
+  %{a2: "BR", a3: "BRA", country: "Brazil", emoji: "🇧🇷", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}
 
   iex> Phone.parse!(555132345678)
-  %{a2: "BR", a3: "BRA", country: "Brazil", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}
+  %{a2: "BR", a3: "BRA", country: "Brazil", emoji: "🇧🇷", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}
 
   ```
   """

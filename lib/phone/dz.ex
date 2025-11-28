@@ -7,6 +7,7 @@ defmodule Phone.DZ do
   def country, do: "Algeria"
   def a2, do: "DZ"
   def a3, do: "DZA"
+  def emoji, do: "🇩🇿"
 
   matcher(:regex, ["213"])
 end

@@ -7,6 +7,7 @@ defmodule Phone.NANP.MP do
   def country, do: "Northern Mariana Islands"
   def a2, do: "MP"
   def a3, do: "MNP"
+  def emoji, do: "🇲🇵"
 
   matcher(:regex, ["1670"])
 end

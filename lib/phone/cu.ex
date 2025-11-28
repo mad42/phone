@@ -7,6 +7,7 @@ defmodule Phone.CU do
   def country, do: "Cuba"
   def a2, do: "CU"
   def a3, do: "CUB"
+  def emoji, do: "🇨🇺"
 
   matcher(:regex, ["53"])
 end

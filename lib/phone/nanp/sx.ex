@@ -7,6 +7,7 @@ defmodule Phone.NANP.SX do
   def country, do: "Sint Maarten"
   def a2, do: "SX"
   def a3, do: "SXM"
+  def emoji, do: "🇸🇽"
 
   matcher(:regex, ["1721"])
 end

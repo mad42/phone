@@ -7,6 +7,7 @@ defmodule Phone.UA do
   def country, do: "Ukraine"
   def a2, do: "UA"
   def a3, do: "UKR"
+  def emoji, do: "🇺🇦"
 
   matcher(:regex, ["380"])
 end

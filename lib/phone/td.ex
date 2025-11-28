@@ -7,6 +7,7 @@ defmodule Phone.TD do
   def country, do: "Chad"
   def a2, do: "TD"
   def a3, do: "TCD"
+  def emoji, do: "🇹🇩"
 
   matcher(:regex, ["235"])
 end

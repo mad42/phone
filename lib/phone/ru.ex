@@ -7,6 +7,7 @@ defmodule Phone.RU do
   def country, do: "Russia"
   def a2, do: "RU"
   def a3, do: "RUS"
+  def emoji, do: "🇷🇺"
 
   matcher(:regex, ["73", "74", "75", "78", "79"])
 end

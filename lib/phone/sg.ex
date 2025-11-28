@@ -7,5 +7,6 @@ defmodule Phone.SG do
   def a2, do: "SG"
   def a3, do: "SGP"
 
+  def emoji, do: "🇸🇬"
   matcher(:regex, ["65"])
 end

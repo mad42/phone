@@ -7,6 +7,7 @@ defmodule Phone.NANP.LC do
   def country, do: "Saint Lucia"
   def a2, do: "LC"
   def a3, do: "LCA"
+  def emoji, do: "🇱🇨"
 
   matcher(:regex, ["1758"])
 end

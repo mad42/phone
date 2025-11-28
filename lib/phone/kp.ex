@@ -7,6 +7,7 @@ defmodule Phone.KP do
   def country, do: "North Korea"
   def a2, do: "KP"
   def a3, do: "PRK"
+  def emoji, do: "🇰🇵"
 
   matcher(:regex, ["850"])
 end

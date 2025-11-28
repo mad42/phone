@@ -6,6 +6,7 @@ defmodule Phone.NANP.US do
   def country, do: "United States"
   def a2, do: "US"
   def a3, do: "USA"
+  def emoji, do: "🇺🇸"
 
   matcher(:modules, [
     Phone.NANP.US.AK,

@@ -5,6 +5,7 @@ defmodule Phone.ES do
   def country, do: "Spain"
   def a2, do: "ES"
   def a3, do: "ESP"
+  def emoji, do: "🇪🇸"
 
   matcher(:modules, [
     Phone.ES.A,

@@ -7,6 +7,7 @@ defmodule Phone.NL do
   def country, do: "Netherlands"
   def a2, do: "NL"
   def a3, do: "NLD"
+  def emoji, do: "🇳🇱"
 
   matcher(:regex, ["31"])
 end

@@ -7,6 +7,7 @@ defmodule Phone.AM do
   def country, do: "Armenia"
   def a2, do: "AM"
   def a3, do: "ARM"
+  def emoji, do: "🇦🇲"
 
   matcher(:regex, ["374"])
 end

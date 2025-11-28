@@ -11,6 +11,7 @@ defmodule Phone.BJTest do
       assert parsed.country == unquote(main_module).country()
       assert parsed.a2 == unquote(main_module).a2()
       assert parsed.a3 == unquote(main_module).a3()
+      assert parsed.emoji == unquote(main_module).emoji()
     end
 
     test "#{inspect(main_module)} cant parse wrong number with code #{code}" do

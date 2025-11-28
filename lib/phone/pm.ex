@@ -7,6 +7,7 @@ defmodule Phone.PM do
   def country, do: "Saint Pierre and Miquelon"
   def a2, do: "PM"
   def a3, do: "SPM"
+  def emoji, do: "🇵🇲"
 
   matcher(:regex, ["508"])
 end

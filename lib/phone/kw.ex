@@ -7,6 +7,7 @@ defmodule Phone.KW do
   def country, do: "Kuwait"
   def a2, do: "KW"
   def a3, do: "KWT"
+  def emoji, do: "🇰🇼"
 
   matcher(:regex, ["965"])
 end

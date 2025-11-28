@@ -7,6 +7,7 @@ defmodule Phone.ES.Mobile do
   def country, do: "Spain Mobile"
   def a2, do: "ES"
   def a3, do: "ESP"
+  def emoji, do: "🇪🇸"
 
   matcher(:regex, [
     "3460",

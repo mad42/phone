@@ -7,6 +7,7 @@ defmodule Phone.CD do
   def country, do: "Democratic Republic of Congo"
   def a2, do: "CD"
   def a3, do: "COD"
+  def emoji, do: "🇨🇩"
 
   matcher(:regex, ["243"])
 end

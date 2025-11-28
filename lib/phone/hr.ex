@@ -7,6 +7,7 @@ defmodule Phone.HR do
   def country, do: "Croatia"
   def a2, do: "HR"
   def a3, do: "HRV"
+  def emoji, do: "🇭🇷"
 
   matcher(:regex, ["385"])
 end

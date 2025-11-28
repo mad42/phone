@@ -14,6 +14,7 @@ defmodule Phone.BZTest do
       assert parsed.country == unquote(main_module).country()
       assert parsed.a2 == unquote(main_module).a2()
       assert parsed.a3 == unquote(main_module).a3()
+      assert parsed.emoji == unquote(main_module).emoji()
       assert parsed == parsed2
     end
 

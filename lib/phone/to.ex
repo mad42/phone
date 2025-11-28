@@ -7,6 +7,7 @@ defmodule Phone.TO do
   def country, do: "Tonga"
   def a2, do: "TO"
   def a3, do: "TON"
+  def emoji, do: "🇹🇴"
 
   matcher(:regex, ["676"])
 end

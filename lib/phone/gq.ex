@@ -7,6 +7,7 @@ defmodule Phone.GQ do
   def country, do: "Equatorial Guinea"
   def a2, do: "GQ"
   def a3, do: "GNQ"
+  def emoji, do: "🇬🇶"
 
   matcher(:regex, ["240"])
 end

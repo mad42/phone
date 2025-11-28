@@ -7,6 +7,7 @@ defmodule Phone.EG do
   def country, do: "Egypt"
   def a2, do: "EG"
   def a3, do: "EGY"
+  def emoji, do: "🇪🇬"
 
   matcher(:regex, ["20"])
 end

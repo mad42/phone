@@ -35,6 +35,7 @@ What is, what isn't and what will be about Phone:
           country: "Country Name",
           a2: "Alpha-2",
           a3: "Alpha-3",
+          emoji: "Regional Indicator Symbol Letters",
           international_code: "1",
           area_code: "yyy",
           number: "xxxxxxx"
@@ -47,6 +48,7 @@ What is, what isn't and what will be about Phone:
           country: "Country Name",
           a2: "Alpha-2 code",
           a3: "Alpha-3 code",
+          emoji: "Regional Indicator Symbol Letters",
           international_code: "1",
           number: "xxxxxxx",
           area_code: "yyy",

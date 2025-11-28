@@ -20,7 +20,7 @@ end
 ```
 
 ### Country Modules
-Country modules works similar to area modules but there are two types of country modules. The first have the static functions to be overwritten, `regex/0`, `country/0`, `a2/0`, `a3/0`, and the macro `matcher/2`, the first parameter specifies that you must use `regex/0` to identify the number, the second works just as the list of pattern matchings you want to build to this module.
+Country modules works similar to area modules but there are two types of country modules. The first have the static functions to be overwritten, `regex/0`, `country/0`, `a2/0`, `a3/0`, `emoji/0` and the macro `matcher/2`, the first parameter specifies that you must use `regex/0` to identify the number, the second works just as the list of pattern matchings you want to build to this module.
 ```elixir
 defmodule Phone.AE do
   use Helper.Country
@@ -29,6 +29,7 @@ defmodule Phone.AE do
   def country, do: "United Arab Emirates"
   def a2, do: "AE"
   def a3, do: "ARE"
+  def emoji, do: "🇦🇪"
 
   matcher :regex, ["971"]
 end
@@ -42,6 +43,7 @@ defmodule Phone.NANP.CA do
   def country, do: "Canada"
   def a2, do: "CA"
   def a3, do: "CAN"
+  def emoji, do: "🇨🇦"
 
   matcher :modules, [Phone.NANP.CA.AB, Phone.NANP.CA.BC, Phone.NANP.CA.MB,
                      Phone.NANP.CA.NB, Phone.NANP.CA.NL, Phone.NANP.CA.NSAndPE,

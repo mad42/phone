@@ -55,6 +55,7 @@ defmodule Phone.NANPTest do
         assert parsed.country == unquote(module).country()
         assert parsed.a2 == unquote(module).a2()
         assert parsed.a3 == unquote(module).a3()
+        assert parsed.emoji == unquote(module).emoji()
       end
 
       test "#{inspect(module)} cant parse wrong number with code #{code}" do

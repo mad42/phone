@@ -7,6 +7,7 @@ defmodule Phone.MQ do
   def country, do: "Martinique"
   def a2, do: "MQ"
   def a3, do: "MTQ"
+  def emoji, do: "🇲🇶"
 
   matcher(:regex, ["596596", "596696"])
 end

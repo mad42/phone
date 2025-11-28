@@ -7,6 +7,7 @@ defmodule Phone.GN do
   def country, do: "Guinea"
   def a2, do: "GN"
   def a3, do: "GIN"
+  def emoji, do: "🇬🇳"
 
   matcher(:regex, ["224"])
 end

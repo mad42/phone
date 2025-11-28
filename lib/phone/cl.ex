@@ -7,6 +7,7 @@ defmodule Phone.CL do
   def country, do: "Chile"
   def a2, do: "CL"
   def a3, do: "CHL"
+  def emoji, do: "🇨🇱"
 
   matcher(:regex, ["56"])
 end

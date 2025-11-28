@@ -7,6 +7,7 @@ defmodule Phone.PS do
   def country, do: "Palestine"
   def a2, do: "DJ"
   def a3, do: "DJI"
+  def emoji, do: "🇵🇸"
 
   matcher(:regex, ["970"])
 end

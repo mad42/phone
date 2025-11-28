@@ -7,6 +7,7 @@ defmodule Phone.NANP.TC do
   def country, do: "Turks and Caicos Islands"
   def a2, do: "TC"
   def a3, do: "TCA"
+  def emoji, do: "🇹🇨"
 
   matcher(:regex, ["1649"])
 end

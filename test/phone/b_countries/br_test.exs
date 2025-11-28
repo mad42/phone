@@ -41,6 +41,7 @@ defmodule Phone.BRTest do
       assert parsed.country == unquote(main_module).country()
       assert parsed.a2 == unquote(main_module).a2()
       assert parsed.a3 == unquote(main_module).a3()
+      assert parsed.emoji == unquote(main_module).emoji()
     end
 
     test "#{inspect(main_module)} cant parse wrong number with code #{code}" do
@@ -65,6 +66,7 @@ defmodule Phone.BRTest do
         assert parsed.country == unquote(main_module).country()
         assert parsed.a2 == unquote(main_module).a2()
         assert parsed.a3 == unquote(main_module).a3()
+        assert parsed.emoji == unquote(main_module).emoji()
         assert parsed.area_type == unquote(module).area_type()
         assert parsed.area_name == unquote(module).area_name()
         assert parsed.area_abbreviation == unquote(module).area_abbreviation()
@@ -93,6 +95,7 @@ defmodule Phone.BRTest do
       assert parsed.country == Phone.BR.TollFree.country()
       assert parsed.a2 == Phone.BR.TollFree.a2()
       assert parsed.a3 == Phone.BR.TollFree.a3()
+      assert parsed.emoji == Phone.BR.TollFree.emoji()
     end
 
     test "it won't accept a Brazilian toll-free number that seems implausibly long" do

@@ -7,6 +7,7 @@ defmodule Phone.BI do
   def country, do: "Burundi"
   def a2, do: "BI"
   def a3, do: "BDI"
+  def emoji, do: "🇧🇮"
 
   matcher(:regex, ["257"])
 end

@@ -7,6 +7,7 @@ defmodule Phone.IO do
   def country, do: "British Indian Ocean Territory"
   def a2, do: "IO"
   def a3, do: "IOT"
+  def emoji, do: "🇮🇴"
 
   matcher(:regex, ["246"])
 end

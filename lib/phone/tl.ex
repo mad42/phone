@@ -7,6 +7,7 @@ defmodule Phone.TL do
   def country, do: "East Timor"
   def a2, do: "TL"
   def a3, do: "TLS"
+  def emoji, do: "🇹🇱"
 
   matcher(:regex, ["670"])
 end

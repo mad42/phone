@@ -7,6 +7,7 @@ defmodule Phone.NANP.PR do
   def country, do: "Puerto Rico"
   def a2, do: "PR"
   def a3, do: "PRI"
+  def emoji, do: "🇵🇷"
 
   matcher(:regex, ["1787", "1939"])
 end

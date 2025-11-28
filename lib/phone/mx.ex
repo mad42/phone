@@ -7,6 +7,7 @@ defmodule Phone.MX do
   def country, do: "Mexico"
   def a2, do: "MX"
   def a3, do: "MEX"
+  def emoji, do: "🇲🇽"
 
   matcher(:regex, ["52"])
 end

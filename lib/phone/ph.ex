@@ -7,6 +7,7 @@ defmodule Phone.PH do
   def country, do: "Philippines"
   def a2, do: "PH"
   def a3, do: "PHL"
+  def emoji, do: "🇵🇭"
 
   matcher(:regex, ["63"])
 end

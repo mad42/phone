@@ -7,6 +7,7 @@ defmodule PhoneTest do
                       a2: "HR",
                       a3: "HRV",
                       country: "Croatia",
+                      emoji: "🇭🇷",
                       international_code: "385",
                       area_code: "",
                       number: "12345678"
@@ -15,6 +16,7 @@ defmodule PhoneTest do
     a2: "HR",
     a3: "HRV",
     country: "Croatia",
+    emoji: "🇭🇷",
     international_code: "385",
     area_code: "",
     number: "12345678"

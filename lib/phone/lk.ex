@@ -7,6 +7,7 @@ defmodule Phone.LK do
   def country, do: "Sri Lanka"
   def a2, do: "LK"
   def a3, do: "LKA"
+  def emoji, do: "🇱🇰"
 
   matcher(:regex, ["94"])
 end

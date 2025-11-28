@@ -7,6 +7,7 @@ defmodule Phone.NANP.KY do
   def country, do: "Cayman Islands"
   def a2, do: "KY"
   def a3, do: "CYM"
+  def emoji, do: "🇰🇾"
 
   matcher(:regex, ["1345"])
 end

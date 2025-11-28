@@ -7,6 +7,7 @@ defmodule Phone.KI do
   def country, do: "Kiribati"
   def a2, do: "KI"
   def a3, do: "KIR"
+  def emoji, do: "🇰🇮"
 
   matcher(:regex, ["686"])
 end

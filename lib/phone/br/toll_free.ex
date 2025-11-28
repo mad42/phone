@@ -7,6 +7,7 @@ defmodule Phone.BR.TollFree do
   def country, do: "Brazil toll-free"
   def a2, do: "BR"
   def a3, do: "BRA"
+  def emoji, do: "🇧🇷"
 
   matcher(:regex, ["55800"])
 end

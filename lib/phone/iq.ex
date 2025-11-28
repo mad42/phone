@@ -7,6 +7,7 @@ defmodule Phone.IQ do
   def country, do: "Iraq"
   def a2, do: "IQ"
   def a3, do: "IRQ"
+  def emoji, do: "🇮🇶"
 
   matcher(:regex, ["964"])
 end

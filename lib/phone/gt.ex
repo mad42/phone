@@ -7,6 +7,7 @@ defmodule Phone.GT do
   def country, do: "Guatemala"
   def a2, do: "GT"
   def a3, do: "GTM"
+  def emoji, do: "🇬🇹"
 
   matcher(:regex, ["502"])
 end

@@ -7,6 +7,7 @@ defmodule Phone.NF do
   def country, do: "Norfolk Island"
   def a2, do: "NF"
   def a3, do: "NFK"
+  def emoji, do: "🇳🇫"
 
   matcher(:regex, ["67232", "67235"])
 end

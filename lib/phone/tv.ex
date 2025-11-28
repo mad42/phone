@@ -7,6 +7,7 @@ defmodule Phone.TV do
   def country, do: "Tuvalu"
   def a2, do: "TV"
   def a3, do: "TUV"
+  def emoji, do: "🇹🇻"
 
   matcher(:regex, ["688"])
 end

@@ -7,6 +7,7 @@ defmodule Phone.FO do
   def country, do: "Faroe Islands"
   def a2, do: "FO"
   def a3, do: "FRO"
+  def emoji, do: "🇫🇴"
 
   matcher(:regex, ["298"])
 end

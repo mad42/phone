@@ -7,6 +7,7 @@ defmodule Phone.VE do
   def country, do: "Venezuela"
   def a2, do: "VE"
   def a3, do: "VEN"
+  def emoji, do: "🇻🇪"
 
   matcher(:regex, ["58"])
 end

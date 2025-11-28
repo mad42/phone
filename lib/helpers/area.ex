@@ -28,6 +28,7 @@ defmodule Helper.Area do
           country: country.country(),
           a2: country.a2(),
           a3: country.a3(),
+          emoji: country.emoji(),
           international_code: code,
           number: number,
           area_code: area,

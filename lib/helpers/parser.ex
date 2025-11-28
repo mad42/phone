@@ -12,16 +12,16 @@ defmodule Helper.Parser do
 
       ```
       iex> Phone.parse("5132345678", :br)
-      {:ok, %{a2: "BR", a3: "BRA", country: "Brazil", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}}
+      {:ok, %{a2: "BR", a3: "BRA", country: "Brazil", emoji: "🇧🇷", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}}
 
       iex> Phone.parse("(51)3234-5678", :br)
-      {:ok, %{a2: "BR", a3: "BRA", country: "Brazil", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}}
+      {:ok, %{a2: "BR", a3: "BRA", country: "Brazil", emoji: "🇧🇷", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}}
 
       iex> Phone.parse("51 3234-5678", :br)
-      {:ok, %{a2: "BR", a3: "BRA", country: "Brazil", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}}
+      {:ok, %{a2: "BR", a3: "BRA", country: "Brazil", emoji: "🇧🇷", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}}
 
       iex> Phone.parse(5132345678, :br)
-      {:ok, %{a2: "BR", a3: "BRA", country: "Brazil", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}}
+      {:ok, %{a2: "BR", a3: "BRA", country: "Brazil", emoji: "🇧🇷", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}}
 
       ```
       """
@@ -43,16 +43,16 @@ defmodule Helper.Parser do
 
       ```
       iex> Phone.parse!("5132345678", :br)
-      %{a2: "BR", a3: "BRA", country: "Brazil", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}
+      %{a2: "BR", a3: "BRA", country: "Brazil", emoji: "🇧🇷", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}
 
       iex> Phone.parse!("(51)3234-5678", :br)
-      %{a2: "BR", a3: "BRA", country: "Brazil", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}
+      %{a2: "BR", a3: "BRA", country: "Brazil", emoji: "🇧🇷", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}
 
       iex> Phone.parse!("51 3234-5678", :br)
-      %{a2: "BR", a3: "BRA", country: "Brazil", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}
+      %{a2: "BR", a3: "BRA", country: "Brazil", emoji: "🇧🇷", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}
 
       iex> Phone.parse!(5132345678, :br)
-      %{a2: "BR", a3: "BRA", country: "Brazil", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}
+      %{a2: "BR", a3: "BRA", country: "Brazil", emoji: "🇧🇷", international_code: "55", area_code: "51", number: "32345678", area_abbreviation: "RS", area_type: "state", area_name: "Rio Grande do Sul"}
 
       ```
       """

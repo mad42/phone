@@ -7,6 +7,7 @@ defmodule Phone.CF do
   def country, do: "Central African Republic"
   def a2, do: "CF"
   def a3, do: "CAF"
+  def emoji, do: "🇨🇫"
 
   matcher(:regex, ["236"])
 end

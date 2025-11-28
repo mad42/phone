@@ -7,6 +7,7 @@ defmodule Phone.WS do
   def country, do: "Samoa"
   def a2, do: "WS"
   def a3, do: "WSM"
+  def emoji, do: "🇼🇸"
 
   matcher(:regex, ["685"])
 end

@@ -7,6 +7,7 @@ defmodule Phone.SD do
   def country, do: "Sudan"
   def a2, do: "SD"
   def a3, do: "SDN"
+  def emoji, do: "🇸🇩"
 
   matcher(:regex, ["249"])
 end

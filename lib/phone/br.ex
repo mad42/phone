@@ -6,6 +6,7 @@ defmodule Phone.BR do
   def country, do: "Brazil"
   def a2, do: "BR"
   def a3, do: "BRA"
+  def emoji, do: "🇧🇷"
 
   matcher(:modules, [
     Phone.BR.AC,

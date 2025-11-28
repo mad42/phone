@@ -7,6 +7,7 @@ defmodule Phone.SH do
   def country, do: "Saint Helena and Tristan da Cunha"
   def a2, do: "SH"
   def a3, do: "SHN"
+  def emoji, do: "🇸🇭"
 
   matcher(:regex, ["290"])
 end

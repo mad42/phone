@@ -7,6 +7,7 @@ defmodule Phone.DJ do
   def country, do: "Djibouti"
   def a2, do: "DJ"
   def a3, do: "DJI"
+  def emoji, do: "🇩🇯"
 
   matcher(:regex, ["253"])
 end
